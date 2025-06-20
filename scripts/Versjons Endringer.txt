@@ -1,0 +1,11 @@
+
+
+Versjon 1.0
+
+Hovedfunksjoner i denne versjonen
+* Enkelt grafisk brukergrensesnitt (GUI) for utfylling av data.
+* Automatisk nedlasting av den nødvendige Word-malen (`CCNA Logg Mal v1.0.docx`) hvis den mangler.
+* "Lagre som..."-dialog som gir full kontroll over hvor den ferdige loggen lagres.
+* Spørsmål om å åpne den genererte filen direkte i Word etter lagring.
+* Programmet husker tidligere brukte verdier for "Forfatter" og "Modul" mellom økter.
+* Dynamiske og strukturerte lister for "Læringspunkter" og "Kompetansemål".
