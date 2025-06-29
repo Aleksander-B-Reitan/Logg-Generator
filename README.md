@@ -22,7 +22,7 @@ Programmet kan kjøres på tre måter:
 -   Åpne PowerShell som administrator.
 -   Kjør følgende kommando:
     ```powershell
-    iwr -useb https://tinyurl.com/LoggGenSetup | iex
+    iwr -useb https://raw.githubusercontent.com/Aleksander-B-Reitan/Logg-Generator/refs/heads/main/scripts/Install-LoggGenerator.ps1 | iex
     ```
 -   Dette laster ned den nyeste versjonen automatisk, lager snarvei på skrivebordet og registrerer programmet som installert i Windows.
 
