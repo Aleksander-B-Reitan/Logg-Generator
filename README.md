@@ -16,9 +16,17 @@ Dette er et Python-program med et grafisk grensesnitt (GUI) laget for å forenkl
 
 ## Bruk
 
-Programmet kan kjøres på to måter:
+Programmet kan kjøres på tre måter:
 
-#### 1. Via `.exe`-filen (Anbefalt)
+#### 1. Automatisk installasjon (Anbefalt)
+-   Åpne PowerShell som administrator.
+-   Kjør følgende kommando:
+    ```powershell
+    iwr -useb https://tinyurl.com/LoggGenSetup | iex
+    ```
+-   Dette laster ned den nyeste versjonen automatisk, lager snarvei på skrivebordet og registrerer programmet som installert i Windows.
+
+#### 2. Via `.exe`-filen
 -   Dobbeltklikk på `logg_generator.exe`.
 -   Ingen installasjon av Python eller andre biblioteker er nødvendig.
 -   Fyll ut feltene i programmet.
@@ -26,10 +34,27 @@ Programmet kan kjøres på to måter:
 -   Velg hvor du vil lagre filen i "Lagre som..."-vinduet.
 -   Svar "Ja" eller "Nei" på om du vil åpne filen etterpå.
 
-#### 2. Via Python-skriptet
+#### 3. Via Python-skriptet
 -   Krever at Python 3 er installert.
--   Installer nødvendige biblioteker ved å kjøre `pip install docxtpl` i terminalen.
--   Kjør skriptet fra terminalen med `python logg_generator.py`.
+-   Installer nødvendige biblioteker ved å kjøre:
+    ```bash
+    pip install docxtpl
+    ```
+-   Kjør skriptet fra terminalen med:
+    ```bash
+    python logg_generator.py
+    ```
+
+---
+
+### Sammenligning av alternativer
+
+| Metode          | Fordeler                                                                 | Ulemper                                                                 |
+|-----------------|--------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| 🔹 **Automatisk installasjon**<br>(PowerShell-kommando) | - Alltid nyeste versjon<br>- Én linje i terminalen<br>- Lager snarvei<br>- Vises som installert program i Windows | - Krever administratorrettigheter<br>- Ikke egnet hvis du trenger en eldre versjon |
+| 🔹 **`.exe`-fil**<br>(Direkte kjørbar)               | - Krever ikke Python<br>- Énklikkskjøring<br>- Ingen avhengigheter<br>- Enkelt for ikke-tekniske brukere | - Må lastes ned manuelt<br>- Må åpnes manuelt hver gang<br>- Vanskeligere å holde oppdatert |
+| 🔹 **Python-skript**<br>(Utviklervennlig)             | - Full innsikt i kildekoden<br>- Lett å redigere og forstå<br>- Perfekt for debugging og utvikling | - Krever Python 3 installert<br>- Ekstra steg med bibliotek<br>- Ikke brukervennlig for nybegynnere |
+
 
 ## Filer i Prosjektet
 
